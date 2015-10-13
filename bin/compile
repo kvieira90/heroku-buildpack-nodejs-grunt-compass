@@ -160,6 +160,8 @@ else
   HOME=$build_dir gem install compass --user-install --no-rdoc --no-ri
 fi
 
+gem install sass
+
 # cache ruby gems compass
 rm -rf $cache_dir/ruby
 mkdir -p $cache_dir/ruby
