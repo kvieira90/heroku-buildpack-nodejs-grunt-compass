@@ -162,9 +162,6 @@ fi
 
 gem install sass
 
-echo /usr/local/lib > /etc/ld.so.conf.d/local.conf
-/sbin/ldconfig
-
 # cache ruby gems compass
 rm -rf $cache_dir/ruby
 mkdir -p $cache_dir/ruby
