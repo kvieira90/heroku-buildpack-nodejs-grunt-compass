@@ -158,10 +158,9 @@ if test -d $cache_dir/ruby/.gem; then
   HOME=$build_dir gem update compass --user-install --no-rdoc --no-ri
 else
   HOME=$build_dir gem install compass --user-install --no-rdoc --no-ri
+  HOME=$build_dir gem install sass
+  HOME=$build_dir gem install ruby-vips --user-install --no-rdoc --no-ri
 fi
-
-gem install sass
-gem install ruby-vips --user-install --no-rdoc --no-ri
 
 # cache ruby gems compass
 rm -rf $cache_dir/ruby
