@@ -161,7 +161,7 @@ else
 fi
 
 gem install sass
-gem install ruby-vips
+gem install ruby-vips --user-install --no-rdoc --no-ri
 
 # cache ruby gems compass
 rm -rf $cache_dir/ruby
